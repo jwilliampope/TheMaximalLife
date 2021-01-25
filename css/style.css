@@ -74,6 +74,20 @@ strong {
   margin: 2em 0;
 }
 
+.widget-title,
+.widget-recent-post-title {
+  font-size: 1rem;
+}
+
+.widget-recent-post-title {
+  order: 0;
+}
+
+.widget-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
 /* =================
 Layout
 ================= */
@@ -95,6 +109,13 @@ header {
   padding: 2em 0;
   text-align: center;
   margin-bottom: 2em;
+}
+
+footer {
+  background: #143774;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
 }
 
 @media (min-width: 675px) {
@@ -213,4 +234,20 @@ nav a:focus,
   border: 20px solid #efefef;
   margin-bottom: 2em;
   padding: 1em;
+}
+
+.widget-recent-post {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+  border: 0;
+  margin: 0;
+}
+
+.widget-image {
+  order: -1;
 }
